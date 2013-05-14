@@ -136,7 +136,7 @@
                             </view>
                             <view contentMode="scaleToFill" id="AAc-GR-q8Y">
                                 <rect key="frame" x="0.0" y="512" width="320" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bottom-bar.png" id="MrW-6B-c25">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
@@ -161,12 +161,17 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="suQ-Pj-cV9">
+                                <rect key="frame" x="0.0" y="50" width="320" height="468"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23413502559726962" green="0.23725469283276451" blue="0.23452165102389078" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="P7g-Vi-qEv"/>
                     <connections>
                         <outlet property="gridView" destination="S14-EV-5VT" id="08q-1B-TXa"/>
+                        <outlet property="imageview" destination="suQ-Pj-cV9" id="0BA-HD-beO"/>
                         <outlet property="view" destination="Eca-t7-MaY" id="y21-y2-tEr"/>
                     </connections>
                 </viewController>
@@ -777,6 +782,59 @@
         <image name="top-nav-bar.png" width="320" height="56"/>
         <image name="yearbook-beyonce-400.jpg" width="400" height="400"/>
     </resources>
+    <classes>
+        <class className="GMGridView" superclassName="UIScrollView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GMGridView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="actionDelegate" candidateClass="NSObject"/>
+                <relationship kind="outlet" name="dataSource" candidateClass="NSObject"/>
+                <relationship kind="outlet" name="layoutStrategy"/>
+                <relationship kind="outlet" name="mainSuperView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="sortingDelegate" candidateClass="NSObject"/>
+                <relationship kind="outlet" name="transformDelegate" candidateClass="NSObject"/>
+            </relationships>
+        </class>
+        <class className="OFBaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OFBaseViewController.h"/>
+        </class>
+        <class className="OFHomeViewController" superclassName="OFBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OFHomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="gridView" candidateClass="GMGridView"/>
+                <relationship kind="outlet" name="imageview" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="OFMoreAppsViewController" superclassName="OFBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OFMoreAppsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="OFPrivacySettingsView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OFPrivacySettingsView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="firstLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="secondLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thirdLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="OFSettingsTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OFSettingsTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="switcher" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="OFSettingsViewController" superclassName="OFBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OFSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -13,5 +13,6 @@
 @interface OFHomeViewController : OFBaseViewController
 
 @property (weak, nonatomic) IBOutlet GMGridView *gridView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
 
 @end
