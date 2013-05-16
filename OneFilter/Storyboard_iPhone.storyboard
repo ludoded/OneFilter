@@ -161,17 +161,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="suQ-Pj-cV9">
-                                <rect key="frame" x="0.0" y="50" width="320" height="468"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23413502559726962" green="0.23725469283276451" blue="0.23452165102389078" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="P7g-Vi-qEv"/>
                     <connections>
                         <outlet property="gridView" destination="S14-EV-5VT" id="08q-1B-TXa"/>
-                        <outlet property="imageview" destination="suQ-Pj-cV9" id="0BA-HD-beO"/>
                         <outlet property="view" destination="Eca-t7-MaY" id="y21-y2-tEr"/>
                     </connections>
                 </viewController>
