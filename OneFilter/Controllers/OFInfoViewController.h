@@ -8,6 +8,24 @@
 
 #import "OFBaseViewController.h"
 
-@interface OFInfoViewController : OFBaseViewController
+typedef enum {
+    kOFInfoCellTypeAbout = 0,
+    kOFInfoCellTypeInstagram,
+    kOFInfoCellTypeFacebook,
+    kOFInfoCellTypeSupport,
+    kOFInfoCellTypeShareApp,
+    kOFInfoCellTypeTerms,
+    kOFInfoCellTypePrivacy,
+    kOFInfoCellTypeRateApp,
+    kOFInfoCellTypeMoreApps,
+    kOFInfoCellTypeNone
+}OFInfoCellType;
+
+@interface OFInfoViewController : OFBaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *navTitle;
+
+- (IBAction)done:(UIButton *)sender;
 
 @end

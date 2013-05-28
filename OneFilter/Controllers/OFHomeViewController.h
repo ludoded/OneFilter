@@ -7,10 +7,10 @@
 //
 
 #import "OFBaseViewController.h"
+#import "OFModel.h"
+#import "GMGridView.h"
 
-@class GMGridView;
-
-@interface OFHomeViewController : OFBaseViewController
+@interface OFHomeViewController : OFBaseViewController <OFMainScreenUi, GMGridViewDataSource, UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet GMGridView *gridView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;

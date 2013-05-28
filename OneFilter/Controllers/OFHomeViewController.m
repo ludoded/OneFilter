@@ -11,24 +11,48 @@
 
 #import <AssetsLibrary/AssetsLibrary.h>
 
-static int count = 0;
+static int count = 20;
+const CGSize OF_GRID_ELEMENT_SIZE = {97, 97};
+
 
 @interface OFHomeViewController () {
     __strong OFAlertView * alert;
     NSArray * imageArray;
     NSMutableArray * mutableArray;
     ALAssetsLibrary * library;
+    OFModel * _model;
+    OFMainScreenModel * _mainModel;
 }
 
 @end
 
 @implementation OFHomeViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _model = [OFModel sharedInastance];
+        _mainModel = _model.mainModel;
+        imageArray = [[NSArray alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
     [self customizeAppearance];
+}
+
+#pragma mark - OFMainScreenUi
+
+- (void)showPulledImages:(NSArray *)images
+{
+    imageArray = images;
+    
+//    [_gridView reloadData];
 }
 
 #pragma mark - Base Methods
@@ -38,11 +62,15 @@ static int count = 0;
     // background color
     self.view.backgroundColor = [UIColor colorWithRed:60.0 / 255.0 green:60.0 / 255.0 blue:60.0 / 255.0 alpha:1.0];
     
-    // Alert View
-//    [self showAccessAlert]; //TODO
+    // Setting gridView
+    _gridView.dataSource = self;
+    _gridView.delegate = self;
+    _gridView.itemSpacing = 7;
     
     // get all pictures
-    [self performSelectorInBackground:@selector(getAllPictures) withObject:nil];
+    _mainModel.delegate = self;
+    [_mainModel authorizeAssets];
+    [_mainModel pullOutImages];
 }
 
 - (void)showAccessAlert
@@ -58,70 +86,30 @@ static int count = 0;
 
 }
 
--(void)getAllPictures
+#pragma mark GMGridViewDataSource
+
+- (NSInteger)numberOfItemsInGMGridView:(GMGridView *)gridView
 {
-    imageArray=[[NSArray alloc] init];
-    mutableArray =[[NSMutableArray alloc]init];
-    NSMutableArray* assetURLDictionaries = [[NSMutableArray alloc] init];
-    
-    library = [[ALAssetsLibrary alloc] init];
-    
-    [library enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        if (*stop) {
-            return ;
-        }
-        // TODO : access granted
-        *stop = TRUE;
-    } failureBlock:^(NSError *error) {
-        // TODO: User denied access. Tell them we can't do anything.
-    }];
-    
-    void (^assetEnumerator)( ALAsset *, NSUInteger, BOOL *) = ^(ALAsset *result, NSUInteger index, BOOL *stop) {
-        if(result != nil && index <= count) {
-            NSLog(@"NSUInteger index : %d", index);
-            if([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto]) {
-                [assetURLDictionaries addObject:[result valueForProperty:ALAssetPropertyURLs]];
-                
-                NSURL *url= (NSURL*) [[result defaultRepresentation]url];
-                
-                [library assetForURL:url
-                         resultBlock:^(ALAsset *asset) {
-                             if (mutableArray.count < count +1)
-                                 [mutableArray addObject:[UIImage imageWithCGImage:[[asset defaultRepresentation] fullScreenImage]]];
-                             if ([mutableArray count]==count)
-                             {
-                                 imageArray=[[NSArray alloc] initWithArray:mutableArray];
-                                 [self allPhotosCollected:imageArray];
-                             }
-                         }
-                        failureBlock:^(NSError *error){ NSLog(@"operation was not successfull!"); } ];
-                
-            }
-        }
-    };
-    
-    NSMutableArray *assetGroups = [[NSMutableArray alloc] init];
-    
-    void (^ assetGroupEnumerator) ( ALAssetsGroup *, BOOL *)= ^(ALAssetsGroup *group, BOOL *stop) {
-        if(group != nil) {
-            [group enumerateAssetsUsingBlock:assetEnumerator];
-            [assetGroups addObject:group];
-            count=20;//[group numberOfAssets];
-        }
-    };
-    
-    assetGroups = [[NSMutableArray alloc] init];
-    
-    [library enumerateGroupsWithTypes:ALAssetsGroupAll
-                           usingBlock:assetGroupEnumerator
-                         failureBlock:^(NSError *error) {NSLog(@"There is an error");}];
+    return imageArray.count;
 }
 
--(void)allPhotosCollected:(NSArray*)imgArray
+- (CGSize)GMGridView:(GMGridView *)gridView sizeForItemsInInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
-    //write your code here after getting all the photos from library...
-    NSLog(@"all pictures are %@",imgArray);
-    _imageview.image = [imgArray lastObject];
+    return (orientation == (UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationLandscapeLeft) ) ? OF_GRID_ELEMENT_SIZE : OF_GRID_ELEMENT_SIZE;
+}
+
+- (GMGridViewCell *)GMGridView:(GMGridView *)gridView cellForItemAtIndex:(NSInteger)index
+{
+    GMGridViewCell * cell = [gridView dequeueReusableCellWithIdentifier:@"OF_GRIDVIEW_CELL"];
+    if (!cell) {
+        cell = [[GMGridViewCell alloc] init];
+        cell.reuseIdentifier = @"OF_GRIDVIEW_CELL";
+    }
+    UIImageView * imgView = [[UIImageView alloc] initWithFrame:(CGRect) {CGPointZero, OF_GRID_ELEMENT_SIZE}];
+    imgView.image = [imageArray objectAtIndex:index];
+    imgView.contentMode = UIViewContentModeCenter;
+    cell.contentView = imgView;
+    return cell;
 }
 
 @end

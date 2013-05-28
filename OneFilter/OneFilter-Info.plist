@@ -15,6 +15,7 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>ONE-FILTER-ICON-57px.png</string>
+				<string>ONE-FILTER-ICON-114px.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -43,7 +44,7 @@
 		<string>DIN Alternate.ttf</string>
 		<string>DIN Black.ttf</string>
 		<string>DIN Black Alternate.ttf</string>
-		<string>DIN Bold.ttf</string>
+		<string>DIN Bold.otf</string>
 		<string>DIN BoldAlternate.ttf</string>
 		<string>DIN Light.ttf</string>
 		<string>DIN LightAlternate.ttf</string>
@@ -64,8 +65,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

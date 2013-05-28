@@ -8,9 +8,19 @@
 
 #import "OFBaseViewController.h"
 
+typedef enum OFSettingCells
+{
+    kOFSettingCellTypeCameraMode = 0,
+    kOFSettingCellTypeSaveOriginal,
+    kOFSettingCellTypeShowWatermark,
+    kOFSettingCellTypeShowAdvertisments,
+    kOFSettingCellTypeNone
+} OFSettingCellType;
+
 @interface OFSettingsViewController : OFBaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *navTitle;
 
 - (IBAction)done:(id)sender;
 

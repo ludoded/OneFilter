@@ -33,7 +33,6 @@
 		6339576517395838008F6AAC /* DIN Alternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339568F17395838008F6AAC /* DIN Alternate.ttf */; };
 		6339576617395838008F6AAC /* DIN Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339569017395838008F6AAC /* DIN Black.ttf */; };
 		6339576717395838008F6AAC /* DIN BlackAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339569117395838008F6AAC /* DIN BlackAlternate.ttf */; };
-		6339576817395838008F6AAC /* DIN Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339569217395838008F6AAC /* DIN Bold.ttf */; };
 		6339576917395838008F6AAC /* DIN BoldAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339569317395838008F6AAC /* DIN BoldAlternate.ttf */; };
 		6339576A17395838008F6AAC /* DIN Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339569417395838008F6AAC /* DIN Light.ttf */; };
 		6339576B17395838008F6AAC /* DIN LightAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6339569517395838008F6AAC /* DIN LightAlternate.ttf */; };
@@ -83,6 +82,7 @@
 		633957A21739736F008F6AAC /* OFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633957A11739736F008F6AAC /* OFSettingsViewController.m */; };
 		633957A517397389008F6AAC /* OFInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633957A417397389008F6AAC /* OFInfoViewController.m */; };
 		633957B217397E34008F6AAC /* OFSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 633957B117397E34008F6AAC /* OFSettingsTableViewCell.m */; };
+		6381C8BC174FBA790048A4FC /* ONE-FILTER-ICON-114px.png in Resources */ = {isa = PBXBuildFile; fileRef = 6381C8BB174FBA790048A4FC /* ONE-FILTER-ICON-114px.png */; };
 		63973A24173BC39B008FCD01 /* logo-loading-page.png in Resources */ = {isa = PBXBuildFile; fileRef = 6397392D173BC39A008FCD01 /* logo-loading-page.png */; };
 		63973A25173BC39B008FCD01 /* logo-loading-page@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6397392E173BC39A008FCD01 /* logo-loading-page@2x.png */; };
 		63973A26173BC39B008FCD01 /* alert-box-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 63973930173BC39A008FCD01 /* alert-box-background.png */; };
@@ -327,6 +327,17 @@
 		63973B23173C0478008FCD01 /* alert-green-button-tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63973B1B173C0478008FCD01 /* alert-green-button-tapped@2x.png */; };
 		63973B27173C2B90008FCD01 /* OFPrivacySettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63973B26173C2B90008FCD01 /* OFPrivacySettingsView.m */; };
 		63A1B3F417424886004950D7 /* ONE-FILTER-ICON-57px.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A1B3F317424886004950D7 /* ONE-FILTER-ICON-57px.png */; };
+		63E977C617526A6800239FB7 /* OFInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E977C517526A6800239FB7 /* OFInfoTableViewCell.m */; };
+		63E977C917526B1200239FB7 /* OFBaseModalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E977C817526B1200239FB7 /* OFBaseModalTableViewCell.m */; };
+		63F04F3C175386440053B60F /* DIN Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 63F04F3B175386440053B60F /* DIN Bold.otf */; };
+		63F04F4317539A280053B60F /* TTFadeSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F04F3F17539A280053B60F /* TTFadeSwitch.m */; };
+		63F04F4417539A280053B60F /* TTSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F04F4117539A280053B60F /* TTSwitch.m */; };
+		63F04F4917539B2F0053B60F /* on-off-toggle-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F04F4517539B2F0053B60F /* on-off-toggle-normal.png */; };
+		63F04F4A17539B2F0053B60F /* on-off-toggle-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F04F4617539B2F0053B60F /* on-off-toggle-normal@2x.png */; };
+		63F04F4B17539B2F0053B60F /* on-off-toggle-tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F04F4717539B2F0053B60F /* on-off-toggle-tapped.png */; };
+		63F04F4C17539B2F0053B60F /* on-off-toggle-tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F04F4817539B2F0053B60F /* on-off-toggle-tapped@2x.png */; };
+		63F04F501753CF4E0053B60F /* OFAboutInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F04F4F1753CF4E0053B60F /* OFAboutInfoViewController.m */; };
+		63F04F521753CFEF0053B60F /* a19text.html in Resources */ = {isa = PBXBuildFile; fileRef = 63F04F511753CFEF0053B60F /* a19text.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -368,7 +379,6 @@
 		6339568F17395838008F6AAC /* DIN Alternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Alternate.ttf"; sourceTree = "<group>"; };
 		6339569017395838008F6AAC /* DIN Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Black.ttf"; sourceTree = "<group>"; };
 		6339569117395838008F6AAC /* DIN BlackAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN BlackAlternate.ttf"; sourceTree = "<group>"; };
-		6339569217395838008F6AAC /* DIN Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Bold.ttf"; sourceTree = "<group>"; };
 		6339569317395838008F6AAC /* DIN BoldAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN BoldAlternate.ttf"; sourceTree = "<group>"; };
 		6339569417395838008F6AAC /* DIN Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Light.ttf"; sourceTree = "<group>"; };
 		6339569517395838008F6AAC /* DIN LightAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN LightAlternate.ttf"; sourceTree = "<group>"; };
@@ -424,6 +434,7 @@
 		633957A417397389008F6AAC /* OFInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFInfoViewController.m; path = Controllers/OFInfoViewController.m; sourceTree = "<group>"; };
 		633957B017397E34008F6AAC /* OFSettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFSettingsTableViewCell.h; path = Models/TableViewCells/OFSettingsTableViewCell.h; sourceTree = "<group>"; };
 		633957B117397E34008F6AAC /* OFSettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFSettingsTableViewCell.m; path = Models/TableViewCells/OFSettingsTableViewCell.m; sourceTree = "<group>"; };
+		6381C8BB174FBA790048A4FC /* ONE-FILTER-ICON-114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ONE-FILTER-ICON-114px.png"; sourceTree = "<group>"; };
 		6397392D173BC39A008FCD01 /* logo-loading-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-loading-page.png"; sourceTree = "<group>"; };
 		6397392E173BC39A008FCD01 /* logo-loading-page@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-loading-page@2x.png"; sourceTree = "<group>"; };
 		63973930173BC39A008FCD01 /* alert-box-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-box-background.png"; sourceTree = "<group>"; };
@@ -672,6 +683,23 @@
 		63973B25173C2B90008FCD01 /* OFPrivacySettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFPrivacySettingsView.h; path = Controllers/Views/OFPrivacySettingsView.h; sourceTree = "<group>"; };
 		63973B26173C2B90008FCD01 /* OFPrivacySettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFPrivacySettingsView.m; path = Controllers/Views/OFPrivacySettingsView.m; sourceTree = "<group>"; };
 		63A1B3F317424886004950D7 /* ONE-FILTER-ICON-57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ONE-FILTER-ICON-57px.png"; sourceTree = "<group>"; };
+		63E977C417526A6800239FB7 /* OFInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFInfoTableViewCell.h; path = Models/TableViewCells/OFInfoTableViewCell.h; sourceTree = "<group>"; };
+		63E977C517526A6800239FB7 /* OFInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFInfoTableViewCell.m; path = Models/TableViewCells/OFInfoTableViewCell.m; sourceTree = "<group>"; };
+		63E977C717526B1200239FB7 /* OFBaseModalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFBaseModalTableViewCell.h; path = Models/TableViewCells/OFBaseModalTableViewCell.h; sourceTree = "<group>"; };
+		63E977C817526B1200239FB7 /* OFBaseModalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFBaseModalTableViewCell.m; path = Models/TableViewCells/OFBaseModalTableViewCell.m; sourceTree = "<group>"; };
+		63F04F3B175386440053B60F /* DIN Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN Bold.otf"; sourceTree = "<group>"; };
+		63F04F3E17539A280053B60F /* TTFadeSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFadeSwitch.h; sourceTree = "<group>"; };
+		63F04F3F17539A280053B60F /* TTFadeSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFadeSwitch.m; sourceTree = "<group>"; };
+		63F04F4017539A280053B60F /* TTSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitch.h; sourceTree = "<group>"; };
+		63F04F4117539A280053B60F /* TTSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSwitch.m; sourceTree = "<group>"; };
+		63F04F4217539A280053B60F /* TTSwitchSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitchSubclass.h; sourceTree = "<group>"; };
+		63F04F4517539B2F0053B60F /* on-off-toggle-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on-off-toggle-normal.png"; sourceTree = "<group>"; };
+		63F04F4617539B2F0053B60F /* on-off-toggle-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on-off-toggle-normal@2x.png"; sourceTree = "<group>"; };
+		63F04F4717539B2F0053B60F /* on-off-toggle-tapped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on-off-toggle-tapped.png"; sourceTree = "<group>"; };
+		63F04F4817539B2F0053B60F /* on-off-toggle-tapped@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on-off-toggle-tapped@2x.png"; sourceTree = "<group>"; };
+		63F04F4E1753CF4E0053B60F /* OFAboutInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFAboutInfoViewController.h; path = Controllers/InfoControllers/OFAboutInfoViewController.h; sourceTree = "<group>"; };
+		63F04F4F1753CF4E0053B60F /* OFAboutInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFAboutInfoViewController.m; path = Controllers/InfoControllers/OFAboutInfoViewController.m; sourceTree = "<group>"; };
+		63F04F511753CFEF0053B60F /* a19text.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = a19text.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,6 +749,7 @@
 		633955B717395749008F6AAC = {
 			isa = PBXGroup;
 			children = (
+				6381C8BB174FBA790048A4FC /* ONE-FILTER-ICON-114px.png */,
 				63A1B3F317424886004950D7 /* ONE-FILTER-ICON-57px.png */,
 				631F8933173E8C8F002E5502 /* QuartzCore.framework */,
 				631F8931173E8BC6002E5502 /* AssetsLibrary.framework */,
@@ -839,6 +868,7 @@
 		6339568A17395838008F6AAC /* FF_DIN_Family_Font */ = {
 			isa = PBXGroup;
 			children = (
+				63F04F3B175386440053B60F /* DIN Bold.otf */,
 				6339568B17395838008F6AAC /* DIN Alternate Black.ttf */,
 				6339568C17395838008F6AAC /* DIN Alternate Bold.ttf */,
 				6339568D17395838008F6AAC /* DIN Alternate Light.ttf */,
@@ -846,7 +876,6 @@
 				6339568F17395838008F6AAC /* DIN Alternate.ttf */,
 				6339569017395838008F6AAC /* DIN Black.ttf */,
 				6339569117395838008F6AAC /* DIN BlackAlternate.ttf */,
-				6339569217395838008F6AAC /* DIN Bold.ttf */,
 				6339569317395838008F6AAC /* DIN BoldAlternate.ttf */,
 				6339569417395838008F6AAC /* DIN Light.ttf */,
 				6339569517395838008F6AAC /* DIN LightAlternate.ttf */,
@@ -914,6 +943,7 @@
 				633957A11739736F008F6AAC /* OFSettingsViewController.m */,
 				633957A317397389008F6AAC /* OFInfoViewController.h */,
 				633957A417397389008F6AAC /* OFInfoViewController.m */,
+				63F04F4D1753CF170053B60F /* InfoControllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -921,6 +951,7 @@
 		633957AE17397DE2008F6AAC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				63F04F3D17539A280053B60F /* TTSwitch */,
 				631F892D173E8724002E5502 /* Base */,
 				631F8903173E825F002E5502 /* GMGridView */,
 				63973B0C173BC850008FCD01 /* OFAlertView */,
@@ -932,8 +963,12 @@
 		633957AF17397DED008F6AAC /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				63E977C717526B1200239FB7 /* OFBaseModalTableViewCell.h */,
+				63E977C817526B1200239FB7 /* OFBaseModalTableViewCell.m */,
 				633957B017397E34008F6AAC /* OFSettingsTableViewCell.h */,
 				633957B117397E34008F6AAC /* OFSettingsTableViewCell.m */,
+				63E977C417526A6800239FB7 /* OFInfoTableViewCell.h */,
+				63E977C517526A6800239FB7 /* OFInfoTableViewCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -1205,6 +1240,7 @@
 				639739DD173BC39A008FCD01 /* twitter-button-normal@2x.png */,
 				639739DE173BC39A008FCD01 /* twitter-button-tapped.png */,
 				639739DF173BC39A008FCD01 /* twitter-button-tapped@2x.png */,
+				63F04F511753CFEF0053B60F /* a19text.html */,
 			);
 			name = A19;
 			path = Resources/temp/A19;
@@ -1213,6 +1249,10 @@
 		639739E0173BC39A008FCD01 /* A20, A21 */ = {
 			isa = PBXGroup;
 			children = (
+				63F04F4517539B2F0053B60F /* on-off-toggle-normal.png */,
+				63F04F4617539B2F0053B60F /* on-off-toggle-normal@2x.png */,
+				63F04F4717539B2F0053B60F /* on-off-toggle-tapped.png */,
+				63F04F4817539B2F0053B60F /* on-off-toggle-tapped@2x.png */,
 				639739E1173BC39A008FCD01 /* arrow.png */,
 				639739E2173BC39A008FCD01 /* arrow@2x.png */,
 				639739E3173BC39A008FCD01 /* done-black-normal.png */,
@@ -1327,6 +1367,28 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		63F04F3D17539A280053B60F /* TTSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				63F04F3E17539A280053B60F /* TTFadeSwitch.h */,
+				63F04F3F17539A280053B60F /* TTFadeSwitch.m */,
+				63F04F4017539A280053B60F /* TTSwitch.h */,
+				63F04F4117539A280053B60F /* TTSwitch.m */,
+				63F04F4217539A280053B60F /* TTSwitchSubclass.h */,
+			);
+			name = TTSwitch;
+			path = Models/TTSwitch;
+			sourceTree = "<group>";
+		};
+		63F04F4D1753CF170053B60F /* InfoControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63F04F4E1753CF4E0053B60F /* OFAboutInfoViewController.h */,
+				63F04F4F1753CF4E0053B60F /* OFAboutInfoViewController.m */,
+			);
+			name = InfoControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1391,7 +1453,6 @@
 				6339576517395838008F6AAC /* DIN Alternate.ttf in Resources */,
 				6339576617395838008F6AAC /* DIN Black.ttf in Resources */,
 				6339576717395838008F6AAC /* DIN BlackAlternate.ttf in Resources */,
-				6339576817395838008F6AAC /* DIN Bold.ttf in Resources */,
 				6339576917395838008F6AAC /* DIN BoldAlternate.ttf in Resources */,
 				6339576A17395838008F6AAC /* DIN Light.ttf in Resources */,
 				6339576B17395838008F6AAC /* DIN LightAlternate.ttf in Resources */,
@@ -1676,6 +1737,13 @@
 				63973B22173C0478008FCD01 /* alert-green-button-tapped.png in Resources */,
 				63973B23173C0478008FCD01 /* alert-green-button-tapped@2x.png in Resources */,
 				63A1B3F417424886004950D7 /* ONE-FILTER-ICON-57px.png in Resources */,
+				6381C8BC174FBA790048A4FC /* ONE-FILTER-ICON-114px.png in Resources */,
+				63F04F3C175386440053B60F /* DIN Bold.otf in Resources */,
+				63F04F4917539B2F0053B60F /* on-off-toggle-normal.png in Resources */,
+				63F04F4A17539B2F0053B60F /* on-off-toggle-normal@2x.png in Resources */,
+				63F04F4B17539B2F0053B60F /* on-off-toggle-tapped.png in Resources */,
+				63F04F4C17539B2F0053B60F /* on-off-toggle-tapped@2x.png in Resources */,
+				63F04F521753CFEF0053B60F /* a19text.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1703,6 +1771,11 @@
 				631F892A173E838D002E5502 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				631F892B173E838D002E5502 /* UIView+GMGridViewAdditions.m in Sources */,
 				631F8930173E8746002E5502 /* OFModel.m in Sources */,
+				63E977C617526A6800239FB7 /* OFInfoTableViewCell.m in Sources */,
+				63E977C917526B1200239FB7 /* OFBaseModalTableViewCell.m in Sources */,
+				63F04F4317539A280053B60F /* TTFadeSwitch.m in Sources */,
+				63F04F4417539A280053B60F /* TTSwitch.m in Sources */,
+				63F04F501753CF4E0053B60F /* OFAboutInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

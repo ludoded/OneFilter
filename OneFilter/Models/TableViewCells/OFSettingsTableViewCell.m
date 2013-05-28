@@ -19,11 +19,22 @@
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-    [super setSelected:selected animated:animated];
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
 
-    // Configure the view for the selected state
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        // Initialization code
+    }
+    return self;
 }
 
 @end

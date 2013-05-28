@@ -6,11 +6,9 @@
 //  Copyright (c) 2013 Jordan Price. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "OFBaseModalTableViewCell.h"
+#import "TTFadeSwitch.h"
 
-@interface OFSettingsTableViewCell : UITableViewCell
-
-@property (nonatomic, weak) IBOutlet UILabel * description;
-@property (nonatomic, weak) IBOutlet UISwitch * switcher;
+@interface OFSettingsTableViewCell : OFBaseModalTableViewCell
 
 @end

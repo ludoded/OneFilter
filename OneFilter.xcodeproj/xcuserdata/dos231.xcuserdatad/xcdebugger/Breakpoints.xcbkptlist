@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "OneFilter/Controllers/OFSettingsViewController.m"
-         timestampString = "389644112.963611"
+         timestampString = "391363798.305924"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "50"
-         endingLineNumber = "50"
+         startingLineNumber = "111"
+         endingLineNumber = "111"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -27,6 +27,19 @@
          startingLineNumber = "401"
          endingLineNumber = "401"
          landmarkName = "-buttonClicked:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "OneFilter/Models/BaseModel/OFModel.m"
+         timestampString = "391453889.250523"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "110"
+         endingLineNumber = "110"
+         landmarkName = "-allPhotosCollected:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
